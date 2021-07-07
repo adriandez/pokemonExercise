@@ -29,10 +29,8 @@ const PokemonList = () => {
   }, [input]);
 
   useEffect(() => {
-      if (result) {
-        pokemon.length !== 0
-          ? setPokemon([...pokemon, result])
-          : setPokemon([result]);
+    if (result) {
+        setPokemon([...pokemon, result]);
       }
       // eslint-disable-next-line
   }, [result]);
