@@ -17,17 +17,3 @@
   justify-content: center;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 10px;
-  max-height: 30px;
-  position: fixed;
-  bottom: 0;
-  background: black;
-  width: 100%;
-  > p {
-    color: white;
-  }
-}

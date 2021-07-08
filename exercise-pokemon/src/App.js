@@ -1,4 +1,5 @@
 import PokemonList from '../src/componets/pages/PokemonList';
+import Footer from './componets/Footer'
 import './App.scss';
 
 const App = () => {
@@ -10,10 +11,8 @@ const App = () => {
       </header>
       <main className="main wrapper">
         <PokemonList />
+        <Footer />
       </main>
-      <footer className="footer">
-        <p>© AEZG {new Date().getFullYear()}</p>
-      </footer>
     </div>
   );
 

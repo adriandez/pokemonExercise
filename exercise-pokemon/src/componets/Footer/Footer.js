@@ -1,7 +1,10 @@
 import "./Footer.scss";
 
 const Footer = () => {
-    return (<div className="Footer">© Juanma Barcia {new Date().getFullYear()}</div>
+    return (
+      <footer className="Footer">
+        <p>© AEZG {new Date().getFullYear()}</p>
+      </footer>
     );
 }
 
