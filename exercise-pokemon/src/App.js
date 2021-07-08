@@ -1,21 +1,22 @@
-import PokemonList from '../src/componets/pages/PokemonList';
-import Footer from './componets/Footer'
-import './App.scss';
+import { BrowserRouter } from "react-router-dom";
+import { PokeProvider } from "../src/context/PokeContext";
+
+import Header from "./componets/Header";
+import Main from "./componets/Main";
+import Footer from "./componets/Footer";
 
 const App = () => {
-
   return (
     <div className="App">
-      <header className="header">
-        <h1>Pokemon</h1>
-      </header>
-      <main className="main wrapper">
-        <PokemonList />
-        <Footer />
-      </main>
+      <BrowserRouter>
+        <PokeProvider>
+          <Header />
+          <Main />
+          <Footer />
+        </PokeProvider>
+      </BrowserRouter>
     </div>
   );
-
-}
+};
 
 export default App;

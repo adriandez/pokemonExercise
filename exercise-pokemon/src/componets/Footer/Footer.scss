@@ -9,6 +9,8 @@
   background: black;
   width: 100%;
   > p {
+    display: flex;
     color: white;
+    justify-content: right;
   }
 }

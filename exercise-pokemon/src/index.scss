@@ -3,13 +3,23 @@ body {
   font-family: sans-serif;
 }
 
+ul.MuiList-root.MuiList-padding {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
 $viewport-phone: 300px;
 $viewport-tablet: 564px;
 $viewport-desktop: 960px;
 
 .wrapper {
   margin: 0 auto;
-  width: $viewport-phone;
 }
 
 @media screen and (min-width: $viewport-tablet + 1px) and (max-width: $viewport-desktop - 1px) {

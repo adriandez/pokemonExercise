@@ -1,4 +1,5 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { PokeContext } from "../../../context/PokeContext";
 import useAxios from "../../../hooks/useAxios";
 import useDebounce, {debounce} from "../../../hooks/useDebounce";
 
@@ -8,7 +9,7 @@ import "./PokemonList.scss";
 
 const PokemonList = () => {
   const [input, setInput] = useState("");
-  const [pokemon, setPokemon] = useState([]);
+  const [pokemon, setPokemon] = useContext(PokeContext);
   const [url, setUrl] = useState("");
   const { loading, result } = useAxios(url);
 

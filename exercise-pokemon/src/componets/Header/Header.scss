@@ -1,0 +1,23 @@
+.Header {
+  // min-height: 30px;
+  // max-height: 40px;
+  background: rgb(0, 0, 0);
+}
+
+div.head-div-img > img {
+  width: 60px;
+}
+
+div.head-div-h1 > h1 {
+  color: white;
+}
+
+div.head-div-nav > nav > button {
+}
+
+header > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
