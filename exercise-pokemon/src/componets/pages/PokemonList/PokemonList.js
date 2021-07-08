@@ -36,9 +36,7 @@ const PokemonList = () => {
   }, [result]);
 
   return (
-    <div className="App">
-      <header className="App-header"></header>
-      <main className="App-main">
+    <section className="PokemonList">
         <input
           type="text"
           name="input"
@@ -46,9 +44,7 @@ const PokemonList = () => {
           onChange={handleChange}
         />
         {loading ? <p>Loading...</p> : paintCards()}
-      </main>
-      <footer className="App-footer"></footer>
-    </div>
+    </section>
   );
 };
 

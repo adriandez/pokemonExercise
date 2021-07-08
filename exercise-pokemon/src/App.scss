@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+  max-height: 40px;
+  background: black;
+  > h1 {
+    color: white;
+  }
+}
+
+.main {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10px;
+  max-height: 30px;
+  position: fixed;
+  bottom: 0;
+  background: black;
+  width: 100%;
+  > p {
+    color: white;
+  }
+}

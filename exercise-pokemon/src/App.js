@@ -1,15 +1,19 @@
-import PokemonList from '../src/componets/pages/PokemonList'
-import "./App.scss";
+import PokemonList from '../src/componets/pages/PokemonList';
+import './App.scss';
 
 const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header"></header>
-      <main className="App-main">
+      <header className="header">
+        <h1>Pokemon</h1>
+      </header>
+      <main className="main wrapper">
         <PokemonList />
       </main>
-      <footer className="App-footer"></footer>
+      <footer className="footer">
+        <p>© AEZG {new Date().getFullYear()}</p>
+      </footer>
     </div>
   );
 
