@@ -1,10 +1,11 @@
 .Header {
-  // min-height: 30px;
-  // max-height: 40px;
+  min-height: 30px;
+  max-height: 100px;
   background: rgb(0, 0, 0);
 }
 
 div.head-div-img > img {
+  margin-left: 30%;
   width: 60px;
 }
 
@@ -13,6 +14,7 @@ div.head-div-h1 > h1 {
 }
 
 div.head-div-nav > nav > button {
+  margin-right: 15%;
 }
 
 header > div {

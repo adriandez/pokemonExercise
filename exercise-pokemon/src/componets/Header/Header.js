@@ -14,7 +14,6 @@ const Header = () => {
             <div className="head-div-h1">
               <h1>Pokemon</h1>
             </div>
-
           <div className="head-div-nav">
             <Nav />
           </div>

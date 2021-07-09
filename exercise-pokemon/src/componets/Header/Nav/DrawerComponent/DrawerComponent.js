@@ -8,15 +8,11 @@ import {
 } from "@material-ui/core";
 import HomeIcon from "@material-ui/icons/Home";
 import EditIcon from "@material-ui/icons/Edit";
-import BallotIcon from "@material-ui/icons/Ballot";
+import SearchIcon from "@material-ui/icons/Search";
 
 const DrawerComponent = ({ openDrawer, setOpenDrawer }) => {
   return (
-    <Drawer
-      anchor="bottom"
-      onClose={() => setOpenDrawer(false)}
-      open={openDrawer}
-    >
+    <Drawer anchor="top" onClose={() => setOpenDrawer(false)} open={openDrawer}>
       <List>
         <Link to="/">
           <ListItem divider button>
@@ -37,7 +33,7 @@ const DrawerComponent = ({ openDrawer, setOpenDrawer }) => {
         <Link to="/search">
           <ListItem divider button>
             <ListItemIcon>
-              <BallotIcon />
+              <SearchIcon />
             </ListItemIcon>
             <ListItemText>PokeSearch</ListItemText>
           </ListItem>
